@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="team">
+    <image src="{{imgpath}}"></image>
+    <text class="teama">{{tname}}</text>
+    <text class="teamb">团队领头人：{{lname}}</text>
+    <text class="teamb">{{ljob}}：{{lhname}}</text>
+  </view>
+  <view class="team_info">
+    <text>{{introduction}}</text>
+  </view>
+
+  <view class="team_list" wx:for="{{teamArr}}" wx:key="id" data-id="{{item.id}}" bindtap="doctorDetial">
+    <view class="team_img"><image src="{{item.facepath}}"></image></view>
+    <view class="team_txt">
+      <text class="teamc">{{item.name}}</text>
+      <text class="teamd">{{item.job}} {{item.hname}}</text>
+      <text class="teame">{{item.introduction}}</text>
+    </view>
+  </view>
+
+</view>

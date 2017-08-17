@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="show_tit"> <text>{{name}}</text> </view>
+  <view class="show_txt">
+    <image src="{{imagepatho}}"></image>
+    <text class="pro_txt">{{datailo}}</text>
+    <image src="{{imagepatht}}"></image>
+    <text class="pro_txt">{{datailt}}</text>
+  </view>
+  <view class="footer" bindtap="actionSheetTap">
+    <view class="fa"><image src="../images/icon2.png"></image><text>客服</text></view>
+    <view class="fb"><text>提交申请</text></view>
+  </view>
+  <action-sheet hidden="{{actionSheetHidden}}">
+    <view class="appdown"><image src="../images/img1.png"></image></view>
+    <action-sheet-cancel class="cancel" bindtap="actionSheetTap">取消</action-sheet-cancel>
+  </action-sheet>
+</view>

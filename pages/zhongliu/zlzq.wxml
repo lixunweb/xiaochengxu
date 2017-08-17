@@ -1,0 +1,64 @@
+<view class="container">
+  <view class="expert_nav">
+    <view class="nav_a hover">
+      <image src="../images/icon22.png"></image>
+      <text>咨询</text>
+    </view>
+    <view class="line"></view>
+    <view class="nav_a">
+      <image src="../images/icon3.png"></image>
+      <text>就医</text>
+    </view>
+    <view class="line"></view>
+    <view class="nav_a nav_b">
+      <image class="video" src="../images/icon4.png"></image>
+      <view><text>康复</text><text class="jjkt">即将开通</text></view>
+    </view>
+  </view>
+  <view class="zl_box1">
+    <view class="zl_tit">
+      <view class="tita">
+        <image src="../images/icon5.png"></image>
+        <text>专家咨询</text>
+      </view>
+      <view class="titb" bindtap="Allzixun">
+        <text>查看全部</text>
+      </view>
+    </view>
+    <scroll-view class="scrollx" scroll-x style="width: 100%">
+     <view class="scrollx">
+      <view class="list" wx:for="{{teamArr}}" wx:key="id" data-id="{{item.id}}" bindtap="teamDetial">
+        <view class="listimg"><image src="{{item.leaderfacepath}}"></image></view>
+        <view class="listtxt1"><text>{{item.name}}</text></view>
+        <view class="listtxt2"><image src="../images/icon6.png"></image><text>{{item.agreesnum}}个赞</text></view>
+      </view>
+     </view>
+    </scroll-view>
+  </view>
+
+  <view class="zl_box1" bindtap="actionSheetTap">
+    <view class="zl_tit">
+      <view class="tita">
+        <image src="../images/icon5.png"></image>
+        <text>科普园地</text>
+      </view>
+      <view class="titb">
+        <text>查看全部</text>
+      </view>
+    </view>
+    <view class="zl_ques zl_ques2">
+      <view class="kplist" wx:for="{{kpyd}}" wx:key="id">
+        <view class="kpimg"><image src="{{item.imagepath}}"></image></view>
+        <view class="kptxt">
+          <text class="kpta">{{item.title}}</text>
+          <text class="kptb">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <action-sheet hidden="{{actionSheetHidden}}">
+    <view class="appdown"><image src="../images/img1.png"></image></view>
+    <action-sheet-cancel class="cancel" bindtap="actionSheetTap">取消</action-sheet-cancel>
+  </action-sheet>
+</view>

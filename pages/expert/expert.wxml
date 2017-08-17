@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="team">
+    <image src="{{imgpath}}"></image>
+    <text class="teama">{{tname}}</text>
+    <text class="teamb">{{dname}} | {{job}}</text>
+    <text class="teamb">{{hname}}</text>
+  </view>
+  <view class="expert_nav">
+    <view class="nav_a nb" bindtap="actionSheetTap">
+      <image src="../images/ex_a.png"></image>
+      <text>图文咨询</text>
+    </view>
+    <view class="nav_a" bindtap="actionSheetTap">
+      <image src="../images/ex_b.png"></image>
+      <text>语音咨询</text>
+    </view>
+    <view class="nav_a nav_b">
+      <image class="video" src="../images/ex_c.png"></image>
+      <text class="jjkt">即将开通</text><text>视频咨询</text>
+    </view>
+    <view class="nav_a" bindtap="actionSheetTap">
+      <image src="../images/ex_d.png"></image>
+      <text>预约面诊</text>
+    </view>
+  </view>
+  <view class="expert_nav expert_text">
+    <view class="nb">
+      <text>好评数</text>
+      <text class="num">{{agreenum}}</text>
+    </view>
+    <view>
+      <text>回答数</text>
+      <text class="num">{{backnum}}</text>
+    </view>
+  </view>
+  <view class="expert_nav expert_tit">专家介绍</view>
+  <view class="expert_show">
+    <text>{{introduction}}</text>
+  </view>
+  <action-sheet hidden="{{actionSheetHidden}}">
+    <view class="appdown"><image src="../images/img1.png"></image></view>
+    <action-sheet-cancel class="cancel" bindtap="actionSheetTap">取消</action-sheet-cancel>
+  </action-sheet>
+</view>

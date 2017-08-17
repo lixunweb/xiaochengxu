@@ -1,0 +1,53 @@
+/* pages/zhongliujiuyi/zljy.wxss */
+.pro_list{
+  width:100%;height: auto;
+  box-shadow:0 0 20rpx 1rpx #e4e4e4;
+  border-radius: 10rpx;
+  padding: 0 0 30rpx 0;
+  margin-bottom: 50rpx;
+}
+.pro_img{
+  width:100%;
+  text-align: center;
+  display: block;
+  margin:0 auto;
+}
+.pro_img image{
+  width: 100%;height:300rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+.pro_tit{
+  display: flex;
+  font-size:36rpx;
+  color: #000;
+  justify-content: center;
+  margin: 10rpx 0 20rpx;
+}
+.pro_txt{
+  display: flex;
+  font-size: 30rpx;
+  color:#9a9a9a;
+  padding: 0 20rpx;
+  line-height: 45rpx;
+}
+.btn{
+  width: 645rpx;height: 96rpx;
+  border:1rpx solid #61c9dd;
+  background: #effcff;
+  color: #61c9dd; line-height: 96rpx;
+  border-radius: 15rpx;
+  margin: 0 0 30rpx 0;
+}
+.ta{
+  font-size: 36rpx;
+  margin: 0 30rpx 0 50rpx;
+}
+.tb{
+  font-size: 30rpx;
+}
+.btn image{
+  width: 15rpx;height: 24rpx;
+  float: right;
+  margin:35rpx 30rpx 0 0;
+}

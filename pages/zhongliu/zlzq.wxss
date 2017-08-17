@@ -1,0 +1,154 @@
+/* pages/zhongliu/zlzq.wxss */
+.expert_nav{
+  display: flex;width: 100%;
+  flex-direction: row;
+  padding: 20rpx 25rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: 20rpx -25rpx;
+  justify-content: space-between;
+}
+.nav_a{
+  width: 33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+}
+.hover{
+  padding:5rpx 0 20rpx;
+  border-bottom: 3px solid #67b5f2;
+  margin-bottom: -20rpx;
+}
+.line{
+  width: 1px;height: 60rpx;
+  border-left:1px solid #e5e5e5;
+}
+.nb{border:none;}
+.nav_a image{
+  width: 52rpx;height: 50rpx;
+  margin: 0 15rpx;
+}
+.nav_a text{
+  font-size:30rpx;
+  color: #666;
+}
+.nav_a image.video{
+  width: 60rpx;height: 40rpx;
+  margin-bottom:0rpx;
+}
+.nav_a text.jjkt{
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+  margin: 0 0 -8rpx 0;
+}
+.nav_b text{
+  color: #999;
+}
+.nav_b view{
+  margin: -20rpx 0 0 0;
+  text-align: center;
+}
+
+.zl_box1{
+  width: 100%;
+  padding: 20rpx 25rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: 20rpx 0;
+  }
+.zl_tit{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.tita{
+  display: flex;
+  align-items: center;
+}
+.tita image{
+  width: 6rpx;height: 27rpx;
+  margin: 0 10rpx 0 0;
+}
+.tita text{
+  font-size: 30rpx;
+  color:#666;
+}
+.titb text{
+  font-size: 30rpx;
+  color:#67b5f2;
+}
+.list{
+  width: 280rpx;
+  margin:20rpx 30rpx 0 0;
+}
+.listimg image{
+  width: 280rpx;height: 370rpx;
+  border-radius: 10rpx;
+}
+.listtxt1{
+  font-size: 32rpx;
+  color: #333;
+  margin: 10rpx 0;
+}
+.listtxt2{
+  font-size: 28rpx;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+.listtxt2 image{
+  width:31rpx;height: 30rpx;
+  margin: 0 10rpx 0 0;
+}
+.scrollx{
+  display: flex;
+  flex-direction: row;
+  width:750rpx;
+}
+.zl_ques{
+  padding: 10rpx 50rpx;
+  margin: 15rpx -25rpx;
+  border-top: 1rpx solid #e5e5e5;
+  font-size: 30rpx;
+  color: #9c9c9c;
+}
+.ques_list{
+  margin: 20rpx 0 0 0;
+}
+.tag{
+  font-size: 24rpx;
+  color: #61c9dd;
+  border:1px solid #61c9dd;
+  border-radius: 5px;
+  padding: 0 10rpx;
+  margin:0 15rpx 0 0;
+}
+
+.zl_ques2{
+  padding: 0 25rpx;
+  border-top:none;
+}
+.kplist{
+  padding:40rpx 25rpx;
+  margin:0 -25rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #e5e5e5;
+}
+.kpimg image{
+  width: 210rpx; height: 160rpx;
+  border-radius: 5px;
+}
+.kptxt{
+  margin: 0 0 0 30rpx;
+}
+.kpta{
+  font-size: 32rpx;
+  color: #333;
+  display: block;
+  margin-bottom: 15rpx;
+}

@@ -1,0 +1,67 @@
+<view class="container" style="padding-top:0">
+  <view class="expert_nav">
+    <view class="nav_a nb {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <text>{{allyiyuan}}</text>
+      <image src="../images/icon7.png"></image>
+    </view>
+    <view class="nav_a {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+      <text>{{allkeshi}}</text>
+      <image src="../images/icon7.png"></image>
+    </view>
+    <view class="nav_a {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+      <text>{{sort}}</text>
+      <image src="../images/icon7.png"></image>
+    </view>
+  </view>
+<view class="menu_box">
+  <view class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+      <view class="qy quyu-left">
+          <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" wx:key="id" bindtap="selectleft" data-city='{{index}}'>
+              {{item.name}}
+          </view>
+      </view>
+      <view class="qy quyu-center">
+          <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" wx:key="id" bindtap="selectcenter" data-city='{{item.id}}' data-name='{{item.name}}'>
+              {{item.name}}
+          </view>
+      </view>
+
+  </view>
+  <view class="temp temp1 {{nzopen ? 'slidown' : 'slidup'}} {{nzshow ? 'disappear':''}}">
+      <view wx:for="{{content}}" wx:key="id" data-id="{{item.id}}" data-name="{{item.name}}" bindtap="selectks">
+          {{item.name}}
+      </view>
+  </view>
+  <view class="temp temp2 {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+      <view wx:for="{{content}}" wx:key="id" data-name="{{item}}" bindtap="sort">
+          {{item}}
+      </view>
+  </view>
+</view>
+<view class="fullbg {{isfull ?' ':'disappear'}}" bindtap="hidebg"></view>
+<view class="listbox">
+  <view class="nodata {{nodata?'':'disappear'}}"><text>暂无数据</text></view>
+  <view class="zixun_list" wx:for="{{teamArr}}" wx:key="id">
+    <image class="top" src="../images/top_img.png"></image>
+    <view class="zx_one">
+      <view class="zximg"><image src="{{item.lfacepath}}"></image></view>
+      <view class="zxtxt">
+        <text class="teama">{{item.name}}</text>
+        <text class="teamb">团队领头人：{{item.lname}}</text>
+        <text class="teamb">副主任医师：{{item.lhname}}</text>
+      </view>
+    </view>
+    <view class="zx_info">
+      <text>{{item.introduction}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="zxa"><text>团队成员</text></view>
+
+    <view class="zxb" wx:for="{{item.members}}" wx:for-item="mebmer" wx:key="mebmer">
+      <text class="zxb_b">{{mebmer.name}}</text>
+      <text class="zxb_c">副主任医师：{{mebmer.hname}}</text>
+    </view>
+    <view data-id="{{item.id}}" class="more" bindtap="teamDetial"><text>查看更多</text></view>
+  </view>
+</view>
+</view>

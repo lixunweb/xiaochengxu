@@ -1,0 +1,9 @@
+<view class="container">
+
+  <view class="pro_list" wx:for="{{teamArr}}" wx:key="id" data-id="{{item.id}}" bindtap="Detial">
+    <view class="pro_img"><image src="{{item.imagepath}}"></image></view>
+    <text class="pro_tit">{{item.name}}</text>
+    <text class="pro_txt">{{item.description}}</text>
+  </view>
+
+</view>

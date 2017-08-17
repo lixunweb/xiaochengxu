@@ -1,0 +1,86 @@
+/* pages/expert/expert.wxss */
+.team image{
+  width: 200rpx; height: 200rpx;
+  border-radius: 50%;
+  display: block;
+  margin:20rpx auto;
+  box-shadow: 0 0 20rpx 1rpx #888;
+}
+.team text{
+  display: flex;
+  justify-content: center;
+  margin: 10rpx 0;
+}
+.teama{font-size: 36rpx;}
+.teamb{font-size: 30rpx;color:#9a9a9a;}
+.expert_nav{
+  display: flex;width: 100%;
+  flex-direction: row;
+  padding: 20rpx 25rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: 40rpx -25rpx;
+  justify-content: space-between;
+}
+.nav_a{
+  border-left:1px solid #e5e5e5;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.nb{border:none;}
+.nav_a image{
+  width: 55rpx;height: 61rpx;
+  display: block;
+  margin: 0 auto 10rpx;
+}
+.nav_a text{
+  font-size:30rpx;
+  color: #666;
+}
+.nav_a image.video{
+  width: 60rpx;height: 40rpx;
+  margin-bottom:0rpx;
+}
+.nav_a text.jjkt{
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center;
+  margin: 0 0 -8rpx 0;
+}
+.nav_b text{
+  color: #999;
+}
+.expert_text{
+  margin-top: 10rpx;
+  padding: 30rpx 25rpx; 
+}
+.expert_text view{
+  width: 50%;
+  text-align: center;
+  border-left:1px solid #e5e5e5;
+}
+.expert_text view.nb{border:none;}
+.expert_text{
+  font-size: 32rpx;
+  color: #9a9a9a;
+}
+.expert_text .num{
+  font-size: 36rpx;
+  color: #4da8f0;
+  margin:0 0 0 20rpx;
+}
+.expert_tit{
+  margin-top: 0;
+  font-size: 30rpx;
+  color: #666;
+}
+.expert_show{
+  margin-top: -10rpx;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 45rpx;
+}

@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/zhongliu/zlzq",
+    "pages/zhongliujiuyi/zljy",
+    "pages/team/team",
+    "pages/zixun/zixun",
+    "pages/expert/expert",
+    "pages/zhongliujiuyixiangqing/zljyxq",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
